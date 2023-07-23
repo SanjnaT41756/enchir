@@ -9,7 +9,6 @@
     "@types/chrome": "^0.0.241",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.38",
-    "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -43,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^18.2.15",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",

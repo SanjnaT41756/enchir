@@ -1,0 +1,34 @@
+/* EXAMPLE CURRENTLY SUBJECT TO CHANGE */
+//Define global variables here, such as colors, fonts, and spacing, which will be used throughout the project.
+
+/**
+ * Colors
+ * ----------------------------------------------------------------------------
+ * This file defines the color palette used in the project. Modify these
+ * variables to customize the colors according to your design requirements.
+ */
+
+ /* Primary Colors */
+ $primary-dark-grey-100: rgb(51, 51, 51);
+ $primary-dark-grey-50: rgba(51, 51, 51, 0.5);
+ $primary-brown-100: rgb(98, 92, 95);
+ $primary-brown-50: rgba(98, 92, 95, 0.5);
+ $background-grey-100: rgb(242, 242, 242);
+ 
+  /* Secondary Colors */
+ $secondary-blue-100: rgba(76, 84, 98, 1);
+ $secondary-blue-50: rgba(76, 84, 98, 0.5);
+ $secondary-blue-30: rgba(76, 84, 98, 0.3);
+ 
+  /* Light Colors */
+ $light-brown-100: rgb(193, 183, 178);
+ $light-brown-50: rgba(193, 183, 178, 0.5);
+ $light-brown-30: rgba(193, 183, 178, 0.3);
+ $light-green-100: rgb(123, 122, 117);
+ $light-green-50: rgba(123, 122, 117, 0.5);
+ 
+ 
+  /* Accent Colors */
+  $accent-beige-100: rgb(166, 151, 139);
+ 
+ 

@@ -1,0 +1,89 @@
+@import '../styles/colors';
+/**
+ * Fonts
+ * ----------------------------------------------------------------------------
+ * This file defines the font families, sizes, and other typography-related styles.
+ * Modify these variables to customize the fonts used in the project.
+ */
+
+ /* External Font Import */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap');
+
+/* Font Family */
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+/* In the _typography.scss file, you generally define the font families to be used 
+ * throughout your application and their associated font sizes, line heights, and other 
+ * typographic styles. However, you do not directly import the font files (e.g., .woff, 
+ * .woff2, .ttf, etc.) into this file. */
+
+/* Font Sizes */
+$xlarge-font-size: 2rem;
+$large-font-size: 1.8125rem;
+$med-font-size: 1.25rem;
+$small-font-size: 0.8rem;
+//$xsmall-font-size: 0.875rem;
+
+/* Font Weights */
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+/* Font Style */
+$font-style-regular: normal;
+$font-style-italic: italic;
+
+/* Line Heights */
+$line-height-large: 170%;
+$line-height-med: 122%;
+$line-height-reg: normal;
+
+/* Typography Usage */
+body {
+  font-family:$primary-font;
+  font-weight: $font-weight-regular;
+  font-size: $small-font-size;
+  color: $primary-dark-brown-100;
+}
+
+/* Headings */
+h1 {
+  font-weight:$font-weight-medium;
+  font-size: $xlarge-font-size;
+  line-height: $line-height-med;
+  color: $primary-dark-brown-100;
+}
+
+h2 {
+  font-weight: $font-weight-medium;
+  font-size: $large-font-size;
+  line-height: $line-height-med;
+  color: $primary-dark-brown-100;
+}
+
+h3{
+  font-weight: $font-weight-medium;
+  font-size: $med-font-size;
+  line-height: $line-height-med;
+  color: $primary-dark-brown-100;
+
+}
+
+/* Paragraphs */
+
+p {
+  font-weight: $font-weight-regular;
+  font-size:$small-font-size;
+  line-height: $line-height-large;
+  
+  .header {
+    color: $primary-dark-brown-80;
+  }
+
+  .desc-text {
+    font-family: $secondary-font;
+    color: $secondary-green-100;
+  }
+}
+
+/* Links */

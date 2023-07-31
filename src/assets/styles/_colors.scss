@@ -9,26 +9,23 @@
  */
 
  /* Primary Colors */
- $primary-dark-grey-100: rgb(51, 51, 51);
- $primary-dark-grey-50: rgba(51, 51, 51, 0.5);
- $primary-brown-100: rgb(98, 92, 95);
- $primary-brown-50: rgba(98, 92, 95, 0.5);
- $background-grey-100: rgb(242, 242, 242);
+ $primary-dark-brown-100: rgb(68, 40, 0);
+ $primary-dark-brown-80: rgba(68, 40, 0, 0.5);
+ $primary-black-100: rgb(0, 0, 0);
+ $primary-black-50: rgba(0, 0, 0, 0.5);
+
  
   /* Secondary Colors */
- $secondary-blue-100: rgba(76, 84, 98, 1);
- $secondary-blue-50: rgba(76, 84, 98, 0.5);
- $secondary-blue-30: rgba(76, 84, 98, 0.3);
+ $secondary-green-100: rgb(143, 121, 70);
+ $secondary-green-50: rgba(143, 121, 70, .5);
  
   /* Light Colors */
- $light-brown-100: rgb(193, 183, 178);
- $light-brown-50: rgba(193, 183, 178, 0.5);
- $light-brown-30: rgba(193, 183, 178, 0.3);
- $light-green-100: rgb(123, 122, 117);
- $light-green-50: rgba(123, 122, 117, 0.5);
+ $light-blue-100: rgb(137, 193, 200);
+ $light-blue-50: rgba(137, 193, 200, 0.5);
  
  
   /* Accent Colors */
-  $accent-beige-100: rgb(166, 151, 139);
+  $accent-orange-100: rgb(251, 194, 119);
+  $accent-orange-50:rgba(251, 194, 119,.5);
  
  

@@ -1,4 +1,5 @@
 @import '../styles/colors';
+@import '../styles/mixins';
 /**
  * Fonts
  * ----------------------------------------------------------------------------
@@ -87,3 +88,7 @@ p {
 }
 
 /* Links */
+
+a {
+  @include reset-link;
+}

@@ -2,8 +2,9 @@
 
 //add breakpoints for responsiveness at some point
 /* Import SCSS partials */
-@import '../styles/colors';
-@import '../styles/layouts';
-@import '../styles/typography';
+@import './colors';
+@import './layouts';
+@import './typography';
+@import './mixins';
 
 /* Import component-specific styles */

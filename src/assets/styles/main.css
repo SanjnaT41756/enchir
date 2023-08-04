@@ -10,6 +10,25 @@
 /* Secondary Colors */
 /* Light Colors */
 /* Accent Colors */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap");
+.container {
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* EXAMPLE CURRENTLY SUBJECT TO CHANGE */
+/**
+ * Colors
+ * ----------------------------------------------------------------------------
+ * This file defines the color palette used in the project. Modify these
+ * variables to customize the colors according to your design requirements.
+ */
+/* Primary Colors */
+/* Secondary Colors */
+/* Light Colors */
+/* Accent Colors */
 /* EXAMPLE CURRENTLY SUBJECT TO CHANGE */
 /**
  * Colors
@@ -28,7 +47,6 @@
  * Modify these variables to customize the fonts used in the project.
  */
 /* External Font Import */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap");
 /* Font Family */
 /* In the _typography.scss file, you generally define the font families to be used 
  * throughout your application and their associated font sizes, line heights, and other 
@@ -83,4 +101,22 @@ p .desc-text {
 }
 
 /* Links */
+a {
+  text-decoration: none;
+}
+a::before, a::after, a:active, a:visited {
+  color: rgb(68, 40, 0);
+}
+
+/* EXAMPLE CURRENTLY SUBJECT TO CHANGE */
+/**
+ * Colors
+ * ----------------------------------------------------------------------------
+ * This file defines the color palette used in the project. Modify these
+ * variables to customize the colors according to your design requirements.
+ */
+/* Primary Colors */
+/* Secondary Colors */
+/* Light Colors */
+/* Accent Colors */
 /* Import component-specific styles *//*# sourceMappingURL=main.css.map */

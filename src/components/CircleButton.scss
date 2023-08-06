@@ -1,0 +1,34 @@
+@import '../assets/styles/main.scss';
+
+.circle-button-contain {
+   color: #1c1c1c;
+   border: solid 1px $primary-dark-brown-100;
+   border-radius: 50%;
+   padding: 10px 10px;
+   @include standard-hover;
+
+   position: relative;
+//    width: 100px;
+//    height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cross {
+    position: center;
+    .cross-line1,
+    .cross-line2 {
+      border-radius: 10px;
+      position: absolute;
+      width: .7px;
+      height: 50%;
+      background-color: $primary-dark-brown-100;
+      transform: rotate(45deg);
+    }
+  
+    .cross-line2 {
+      transform: rotate(-45deg);
+    }
+  }
+  

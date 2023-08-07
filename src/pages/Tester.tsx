@@ -7,6 +7,7 @@ function Tester() {
     <div className='tester-page-contain'>
       <Button type='small' link='/home' text='button' />
       <CircleButton type="cross" link='/home' />
+      <CircleButton type="info" link='/home' />
     </div>
   )
 }

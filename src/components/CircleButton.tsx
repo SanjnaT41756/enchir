@@ -12,6 +12,14 @@ function CircleButton (props) {
             <span className="cross-line2"></span>
           </>
         )}
+        {props.type === 'info' && (
+          <>
+            <span className="dot"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
+          </>
+        )}
+
       </div>
     </a>
   );

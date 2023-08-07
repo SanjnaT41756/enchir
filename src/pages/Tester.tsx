@@ -4,7 +4,7 @@ import './Tester.scss';
 function Tester() {
   return(
     <div className='tester-page-contain'>
-      <Button type='small' link='/home' text='button' />
+      <Button type='small' link='/home' text='insert text' />
     </div>
   )
 }

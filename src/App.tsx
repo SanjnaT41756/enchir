@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
 import logo from './logo.svg';
 import './assets/styles/main.scss';
 import './App.css';
@@ -7,9 +8,11 @@ import Tester from './pages/Tester';
 
 function App() {
   return (
-    <div className="App">
-      <Tester />
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        <Tester />
+      </div>
+    </ChakraProvider>
   );
 }
 

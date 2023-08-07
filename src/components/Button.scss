@@ -1,10 +1,19 @@
 @import '../assets/styles/main.scss';
 
 .button-contain {
-   font-size: 1.25rem;
+   font-size: 0.875rem;
    color: #1c1c1c;
    border: solid 1px #1c1c1c;
-   border-radius: 2px;
-   padding: 10px 20px;
-   @include standard-hover;
+   border-radius: 0.6rem;
+   padding: 0.6rem 2rem;
+
+   @include standard-hover($med-shadow);
+
+   &.yes {
+      @include standard-hover($med-shadow, $light-blue-50);
+   }
+
+   &.no {
+      @include standard-hover($small-shadow, $accent-orange-50);
+   }
 }

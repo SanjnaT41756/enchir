@@ -5,10 +5,11 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import React from 'react';
 
+/* takes in link and type */
 function CircleButton (props) { 
   return(
     <a href={props.link}>
-      <div className={`circle-button-contain container ${props.type}`}>
+      <div className={`circle-button-contain ${props.type}`}>
         {props.type === 'cross' && (
           <CloseIcon boxSize={3}/>
         )}

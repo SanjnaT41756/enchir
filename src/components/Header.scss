@@ -1,0 +1,33 @@
+@import '../assets/styles/main.scss';
+
+.header-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid 1px rgba(0,0,0,0.12);
+  padding-bottom: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    h3 {
+      border-right: solid 1px $primary-dark-brown-100;
+      padding-right: 1.2rem;
+    }
+
+    p {
+      padding-left: 1.2rem;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    align-items: flex-end;
+  }
+}

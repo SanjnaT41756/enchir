@@ -1,5 +1,7 @@
 import Button from "../components/Button";
 import CircleButton from "../components/CircleButton";
+import Header from "../components/Header";
+import LinkBar from "../components/LinkBar";
 import './Tester.scss';
 
 function Tester() {
@@ -10,6 +12,8 @@ function Tester() {
       <CircleButton type="cross" link='/home' />
       <CircleButton type="info" link='/home' />
       <CircleButton type="arrow" link='/home' />
+      <Header page="insert text" />
+      <LinkBar />
 
     </div>
   )

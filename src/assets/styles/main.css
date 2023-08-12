@@ -40,6 +40,7 @@
 /* Secondary Colors */
 /* Light Colors */
 /* Accent Colors */
+/* if circle button, the size of the drop-shadow is slightly smaller */
 /**
  * Fonts
  * ----------------------------------------------------------------------------
@@ -80,7 +81,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 122%;
   color: rgb(68, 40, 0);
@@ -119,4 +120,5 @@ a::before, a::after, a:active, a:visited {
 /* Secondary Colors */
 /* Light Colors */
 /* Accent Colors */
+/* if circle button, the size of the drop-shadow is slightly smaller */
 /* Import component-specific styles *//*# sourceMappingURL=main.css.map */

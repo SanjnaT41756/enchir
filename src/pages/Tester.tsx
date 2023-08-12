@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import CircleButton from "../components/CircleButton";
+import Stars from "../components/Stars";
 import './Tester.scss';
 
 function Tester() {
@@ -10,6 +11,7 @@ function Tester() {
       <CircleButton type="cross" link='/home' />
       <CircleButton type="info" link='/home' />
       <CircleButton type="arrow" link='/home' />
+      <Stars/>
 
     </div>
   )

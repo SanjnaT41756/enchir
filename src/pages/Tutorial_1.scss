@@ -1,0 +1,25 @@
+.page-contain {
+  width:31rem;
+  height: 40rem;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items:center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+
+  .enchir-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+    object-fit: contain;
+  }
+}

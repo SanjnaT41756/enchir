@@ -1,0 +1,28 @@
+@import '../assets/styles/main.scss';
+
+.star-rating {
+    //font-size: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  
+    .stars {
+      display: flex;
+      align-items: center;
+      font-size: 24px; /* Adjust the size of the stars */
+      color: #d9d9d9; /* Star color */
+    }
+  
+    .star {
+      cursor: pointer;
+      padding: 2px; /* Add padding for spacing */
+      font-size: 24px; /* Set icon size */
+      
+      
+      &.filled {
+        color: $accent-orange-100; /* Star color when filled */
+      }
+
+  }
+}
+  

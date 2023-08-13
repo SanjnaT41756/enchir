@@ -19,7 +19,7 @@ function Tutorial_1() {
             <p>your personal web exploring buddy</p>
         </div>
       </section>
-      <Button type='default' link='#' text='learn more' />
+      <Button type='default' link='#/T2' text='learn more' />
       {/* <Button type='yes' link='/home' text='insert text' />
       <CircleButton type="cross" link='/home' />
       <CircleButton type="info" link='/home' />

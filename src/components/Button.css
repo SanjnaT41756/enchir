@@ -18,6 +18,34 @@
   margin: 0 auto;
 }
 
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-self: flex-end;
+}
+.footer-button.end {
+  justify-content: flex-start;
+}
+
+.enchir-icon {
+  width: 6.5rem;
+  height: 6.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.text-contain {
+  text-align: left;
+}
+
 /* EXAMPLE CURRENTLY SUBJECT TO CHANGE */
 /**
  * Colors
@@ -61,7 +89,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: rgb(68, 40, 0);
 }
 
@@ -85,18 +113,19 @@ h3 {
   font-size: 1.25rem;
   line-height: 122%;
   color: rgb(68, 40, 0);
+  margin-bottom: 1rem;
 }
 
 /* Paragraphs */
 p {
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   line-height: 170%;
 }
-p .header {
+p.header {
   color: rgba(68, 40, 0, 0.5);
 }
-p .desc-text {
+p.desc-text {
   font-family: "Roboto", sans-serif;
   color: rgb(143, 121, 70);
 }

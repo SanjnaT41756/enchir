@@ -151,41 +151,35 @@ a::before, a::after, a:active, a:visited {
 /* Accent Colors */
 /* if circle button, the size of the drop-shadow is slightly smaller */
 /* Import component-specific styles */
-.circle-button-contain {
-  color: #1c1c1c;
-  border: solid 1px rgb(68, 40, 0);
-  border-radius: 50%;
-  padding: 1.125rem;
-  transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  position: relative;
+.icon-open, .icon-close {
   width: 20px;
   height: 20px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.circle-button-contain:hover {
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: 2.5px 2.5px 0px 0px rgba(0, 0, 0, 0.25);
-}
-.circle-button-contain.info {
   transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.circle-button-contain.info:hover {
-  background-color: rgba(251, 194, 119, 0.5);
-  box-shadow: 2.5px 2.5px 0px 0px rgba(0, 0, 0, 0.25);
+
+.icon-open {
+  border-color: rgb(68, 40, 0);
+  content: ">";
 }
-.circle-button-contain.cross {
-  transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+.icon-close {
+  border-color: rgb(143, 121, 70);
+  content: "v";
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-.circle-button-contain.cross:hover {
-  background-color: rgba(137, 193, 200, 0.5);
-  box-shadow: 2.5px 2.5px 0px 0px rgba(0, 0, 0, 0.25);
+
+button {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
 }
-.circle-button-contain.arrow {
-  transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.circle-button-contain.arrow:hover {
-  background-color: rgba(251, 194, 119, 0.5);
-  box-shadow: 2.5px 2.5px 0px 0px rgba(0, 0, 0, 0.25);
-}/*# sourceMappingURL=CircleButton.css.map */
+button:hover .icon-close {
+  border-color: rgb(68, 40, 0);
+}/*# sourceMappingURL=Accordian.css.map */

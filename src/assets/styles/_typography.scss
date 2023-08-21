@@ -23,7 +23,7 @@ $secondary-font: 'Roboto', sans-serif;
 $xlarge-font-size: 2rem;
 $large-font-size: 1.8125rem;
 $med-font-size: 1.25rem;
-$small-font-size: 0.8rem;
+$small-font-size: 0.875rem;
 //$xsmall-font-size: 0.875rem;
 
 /* Font Weights */
@@ -67,7 +67,7 @@ h3{
   font-size: $med-font-size;
   line-height: $line-height-med;
   color: $primary-dark-brown-100;
-
+  margin-bottom: 1rem;
 }
 
 /* Paragraphs */
@@ -77,11 +77,11 @@ p {
   font-size:$small-font-size;
   line-height: $line-height-large;
   
-  .header {
+  &.header {
     color: $primary-dark-brown-80;
   }
 
-  .desc-text {
+  &.desc-text {
     font-family: $secondary-font;
     color: $secondary-green-100;
   }

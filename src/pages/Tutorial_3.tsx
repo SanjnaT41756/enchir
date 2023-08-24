@@ -1,3 +1,4 @@
+import React from 'react';
 import './Tutorial_3.scss';
 import Header from '../components/Header';
 import Button from '../components/Button';
@@ -18,7 +19,7 @@ function Tutorial_3() {
         <img className='enchir-icon' src={enchirNeutral} alt='enchir neutral icon' />
       </section>
       <div className='footer-button end'>
-          <Button type='default' link='#/' text='back' />
+          <Button type='default' link='#/G2' text='back' />
         </div>
     </div>
   );

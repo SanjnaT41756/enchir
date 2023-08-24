@@ -11,13 +11,16 @@ function CircleButton (props) {
     <a href={props.link}>
       <div className={`circle-button-contain ${props.type}`}>
         {props.type === 'cross' && (
-          <CloseIcon boxSize={3}/>
+          <CloseIcon boxSize={3} />
         )}
         {props.type === 'info' && (
-          <MoreHorizIcon fontSize ={'medium'} />
+          <MoreHorizIcon fontSize={'medium'} />
         )}
         {props.type == 'arrow' && (
-          <ChevronRightIcon boxSize={25}/>
+          <>
+            <ChevronRightIcon boxSize={25} />
+          </>
+
         )}
 
       </div>

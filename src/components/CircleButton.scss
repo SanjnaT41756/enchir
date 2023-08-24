@@ -14,7 +14,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-
+   
    &.info {
     @include standard-hover( $small-shadow, $accent-orange-50);
    }
@@ -27,29 +27,4 @@
     @include standard-hover( $small-shadow, $accent-orange-50);
    }
 }
-
-// .cross {
-//     position: center;
-//     .cross-line1,
-//     .cross-line2 {
-//       border-radius: 10px;
-//       position: absolute;
-//       width: .7px;
-//       height: 50%;
-//       background-color: $primary-dark-brown-100;
-//       transform: rotate(45deg);
-//     }
-  
-//     .cross-line2 {
-//       transform: rotate(-45deg);
-//     }
-//   }
-
-//   .dot {
-//     width: 3px;
-//     height: 3px;
-//     border-radius: 50%;
-//     border: 2px solid $primary-dark-brown-100;
-//     margin: 0 .3px; /* Adjust the margin as needed */
-//   }
 

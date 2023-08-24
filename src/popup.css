@@ -1,0 +1,13 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+  display: none;
+}
+.popup.open {
+  display: block;
+}/*# sourceMappingURL=popup.css.map */

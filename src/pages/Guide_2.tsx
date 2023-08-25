@@ -9,7 +9,7 @@ function Guide_2(props) {
             <div className = 'content'>
                 <h3>topics I can help you with...</h3>
                 <div className="button-and-text">
-                    <CircleButton type='arrow' link='#/'  />
+                    <CircleButton type='arrow' link='#/G3'  />
                     <h2> {props.o1} </h2>
                 </div>
                 <div className="button-and-text">

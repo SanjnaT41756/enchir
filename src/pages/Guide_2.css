@@ -156,8 +156,14 @@ a::before, a::after, a:active, a:visited {
   align-items: flex-start;
   margin: 0 auto;
 }
-
-p.desc-text {
+.g-2 .content .button-and-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.g-2 .content h2 {
+  margin-left: 1rem;
   color: rgb(143, 121, 70);
   font-size: x-large;
+  font-weight: 400;
 }/*# sourceMappingURL=Guide_2.css.map */

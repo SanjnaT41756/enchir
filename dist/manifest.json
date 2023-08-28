@@ -4,6 +4,9 @@
     "name": "enchir chrome extension",
     "description": "This is a Chrome extension built with React and TypeScript",
     "permissions": ["activeTab"],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    },
     "action": {
         "default_popup": "js/index.html",
         "default_title": "React Chrome Extension"
@@ -14,11 +17,12 @@
         "128": "enchirIcon128.png"
     },
     "content_scripts": [
-        {
-          "matches": ["<all_urls>"],
-          "js": ["content.tsx"]
-        }
-      ]
-    
-
-}
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "js/background.js"
+    }
+  }

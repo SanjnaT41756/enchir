@@ -4,6 +4,7 @@ import CircleButton from '../components/CircleButton';
 import './Guide_2.scss';
 function Guide_2(props) {
     return(
+        <div className="box">
         <div className='page-contain g-2'> 
         <Header className='header' page= {props.header_text} />
             <div className = 'content'>
@@ -21,6 +22,7 @@ function Guide_2(props) {
                     <h2> {props.o3}</h2>
             </div>
         </div>
+      </div>
       </div>
     );
  };

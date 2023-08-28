@@ -38,7 +38,7 @@ function Guide_3(props) {
       </section>
         <div className='footer-button'>
           <Button type='default' link='#/G2' text='back' />
-          <Button type='default' link='#/' text='next' />
+          <Button type='default' link='#/G4' text='next' />
         </div>
     </div>
   );

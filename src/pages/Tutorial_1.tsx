@@ -9,14 +9,14 @@ import './Tutorial_1.scss';
 
 function Tutorial_1() {
   return(
-    <div className='page-contain'> 
+    <div className='page-contain tut-1'> 
       <Header className='header' page='welcome to enchir' />
       <section className='content'>
         <h2>hey there!</h2>
         <img className='enchir-icon' src={enchirNeutral} alt='enchir neutral icon' />
         <div className='desc'>
             <h2> i'm enchir, </h2>
-            <p>your personal web exploring buddy</p>
+            <p className='desc-text'>your personal web exploring buddy</p>
         </div>
       </section>
       <Button className='bot-button' type='default' link='#/T2' text='learn more' />

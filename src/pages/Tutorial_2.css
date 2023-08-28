@@ -155,6 +155,7 @@ a::before, a::after, a:active, a:visited {
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 p.desc-text {

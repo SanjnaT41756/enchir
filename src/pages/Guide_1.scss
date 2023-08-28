@@ -1,5 +1,9 @@
-.tut-3 .content {
+.g-1 .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}/*# sourceMappingURL=Tutorial_3.css.map */
+
+  .left {
+    text-align: left;
+  }
+}

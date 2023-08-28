@@ -3,9 +3,6 @@ import "./Header.scss";
 
 function Header(props) {
   const pageName = props.page;
-  const handleClick = () => {
-    window.close();
-  }
 
   return(
     <div className='header-contain'>
@@ -15,7 +12,7 @@ function Header(props) {
       </div>
       <div className='right'>
         <CircleButton link='enchir.info' type='info' />
-        <CircleButton link='#' type='cross' onClick={handleClick} />
+        <CircleButton link='#/G4' type='cross'/>
       </div>
     </div>
   );

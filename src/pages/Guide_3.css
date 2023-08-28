@@ -1,0 +1,12 @@
+.info {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.icon {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 3rem;
+}/*# sourceMappingURL=Guide_3.css.map */

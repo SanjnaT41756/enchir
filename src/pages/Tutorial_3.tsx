@@ -19,7 +19,7 @@ function Tutorial_3() {
         <img className='enchir-icon' src={enchirNeutral} alt='enchir neutral icon' />
       </section>
       <div className='footer-button end'>
-          <Button type='default' link='#/G1' text='back' />
+          <Button type='default' link='#/T2' text='back' />
         </div>
     </div>
   );

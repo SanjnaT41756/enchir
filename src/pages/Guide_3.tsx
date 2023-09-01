@@ -19,6 +19,7 @@ function Guide_3(props) {
 
 
   return(
+    <div className = "box">
     <div className='page-contain'> 
       <Header className='header' page={props.header_text} />
       <section className='content'>
@@ -40,6 +41,7 @@ function Guide_3(props) {
           <Button type='default' link='#/G2' text='back' />
           <Button type='default' link='#/G4' text='next' />
         </div>
+    </div>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import './Guide_4.scss';
 
 function Guide_4(props) {
     return(
+      <div className="box">
       <div className='page-contain g-4'> 
         <Header className='header' page= {props.header_text} />
         <section className = 'content'>
@@ -26,6 +27,7 @@ function Guide_4(props) {
           <h3>still have questions?</h3>
           <Button type='default' link='#' text='visit enchir.info' />
         </div>
+      </div>
       </div>
     );
  };

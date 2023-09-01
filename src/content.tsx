@@ -17,71 +17,50 @@ button.style.right = '0';
 button.style.transform = 'translateY(-50%)';
 button.style.zIndex = '9999';
 button.style.backgroundImage = `url(${chrome.runtime.getURL('enchirIcon.png')})`;
+// Append the button to the body
+document.body.appendChild(button);
 
-
-// const box = document.createElement('div');
-// box.style.width = '300px'; // Adjust the width as needed
-// box.style.height = '200px'; // Adjust the height as needed
-// box.id = 'popupBox';
-// box.style.position = 'absolute';
-// box.style.top = '50%';
-// box.style.right = '70px';
-// box.style.transform = 'translateY(-50%)';
-// box.style.backgroundColor = 'blue';
-// box.style.border = '1px solid gray';
-// box.style.borderRadius = '10px';
-// box.style.padding = '10px';
-// box.style.display = 'none'; // Hide the box initially
-
-
-// document.body.appendChild(button);
-// document.body.appendChild(box);
-
-
-// button.addEventListener('click', () => {
-//   box.style.display = box.style.display === 'block' ? 'none' : 'block';
-// });
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Guide_2 from './pages/Guide_2'; // Replace with your actual component path
-
-
-
-
-
-
-// Append the button to the body
-document.body.appendChild(button);
+import Popup from './popup';
+import { HashRouter as Router} from 'react-router-dom';
 
 let isComponentVisible = false;
 let container; // Store the container reference
 
+function createContainer() {
+  if (!container) {
+    container = document.createElement('div');
+    container.style.position = 'fixed';
+    container.style.top = '50px'; // Adjust as needed
+    container.style.right = '20px'; // Adjust as needed
+    container.style.zIndex = '9999'; // Make sure it's above other content
+    document.body.appendChild(container);
+  }
+}
+
+
 // Add a click event listener to the button
 button.addEventListener('click', () => {
+  console.log('Button clicked'); 
   if (!isComponentVisible) {
-    // Create a container element for your component
-    container = document.createElement('div');
-    document.body.appendChild(container);
-
+    createContainer();
     // Render your React component into the container
-    ReactDOM.render(<Guide_2 />, container);
-
+    ReactDOM.render(
+        <Router> <Popup /> </Router>, container
+    );
     isComponentVisible = true;
-  } else {
+
+  } 
+  else {
     // Unmount the React component and remove the container
     ReactDOM.unmountComponentAtNode(container);
     container.remove();
-
+    container = null; // Reset the container reference
     isComponentVisible = false;
   }
 });
-
-
-
-
-
-
 
 
 

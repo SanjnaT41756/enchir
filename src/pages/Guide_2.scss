@@ -1,17 +1,5 @@
 @import '../assets/styles/main.scss';
 
-.box {
-  position: fixed;
-  top: 50px; // Adjust as needed
-  right: 100px; // Adjust as needed
-  width: 200px; // Adjust width
-  height: 300px; // Adjust height
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 9999; // Make sure it's above other content
-
   // Add any additional styling here
   .g-2  .content{
     display: flex;
@@ -33,7 +21,6 @@
   
   }
   
-}
 
 
 

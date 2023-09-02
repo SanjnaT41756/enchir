@@ -21,15 +21,20 @@
 .content {
   width: 90%;
   margin: 0 auto;
+  padding-top: 1rem;
 }
 
 .footer-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
   align-self: flex-end;
+}
+.footer-button h3 {
+  margin: 0;
 }
 .footer-button.end {
   justify-content: flex-start;
@@ -44,6 +49,19 @@
 
 .text-contain {
   text-align: left;
+}
+
+.box {
+  padding: 2rem 1rem;
+  width: 500px;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 /* EXAMPLE CURRENTLY SUBJECT TO CHANGE */

@@ -1,14 +1,15 @@
 
 console.log('i am here')
 
-
-const button = document.createElement('button');
-button.textContent = 'Click Me';
+import enchirNeutral from './assets/images/enchirNeutral.png'
+//const button = document.createElement('button');
+const button = document.createElement('img');
+//button.textContent = 'Click Me';
 button.style.width = '50px';
 button.style.height = '50px';
-button.style.borderRadius = '50%';
-button.style.backgroundColor = 'brown';
-button.style.color = 'white';
+//button.style.borderRadius = '50%';
+//button.style.backgroundColor = 'brown';
+//button.style.color = 'white';
 button.style.border = 'none';
 button.style.position = 'fixed';
 button.style.cursor = 'pointer';
@@ -16,7 +17,9 @@ button.style.top = '50%';
 button.style.right = '0';
 button.style.transform = 'translateY(-50%)';
 button.style.zIndex = '9999';
-button.style.backgroundImage = `url(${chrome.runtime.getURL('enchirIcon.png')})`;
+//button.src = enchirNeutral;
+
+button.src = chrome.runtime.getURL('js/dc256b500c4c6129e3a1.png');
 // Append the button to the body
 document.body.appendChild(button);
 
@@ -26,8 +29,10 @@ import ReactDOM from 'react-dom';
 import Popup from './popup';
 import { HashRouter as Router} from 'react-router-dom';
 
+
 let isComponentVisible = false;
 let container; // Store the container reference
+
 
 function createContainer() {
   if (!container) {
@@ -61,8 +66,6 @@ button.addEventListener('click', () => {
     isComponentVisible = false;
   }
 });
-
-
 
 
 

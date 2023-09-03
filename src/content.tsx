@@ -1,7 +1,7 @@
 
 console.log('i am here')
 
-import enchirNeutral from './assets/images/enchirNeutral.png'
+//import enchirNeutral from "../dist/js/images/enchirNeutral.png"
 //const button = document.createElement('button');
 const button = document.createElement('img');
 //button.textContent = 'Click Me';
@@ -19,7 +19,7 @@ button.style.transform = 'translateY(-50%)';
 button.style.zIndex = '9999';
 //button.src = enchirNeutral;
 
-button.src = chrome.runtime.getURL('js/dc256b500c4c6129e3a1.png');
+button.src = chrome.runtime.getURL("js/images/enchirNeutral.png");
 // Append the button to the body
 document.body.appendChild(button);
 

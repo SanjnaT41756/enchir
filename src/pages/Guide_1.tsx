@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
-import enchirWow from '../assets/images/enchir_wow.png';
+//import enchirWow from '../assets/images/enchir_wow.png';
 import './Guide_1.scss';
 
 function Guide_1(props) {
@@ -15,7 +15,7 @@ function Guide_1(props) {
               <p className='desc-text'>would you like to learn about cookies?</p>
             </div>
             <div className='right'>
-              <img className='enchir-icon' src={enchirWow} alt='Alerted enchir icon.' />
+              <img className='enchir-icon' src={chrome.runtime.getURL("js/images/enchir_wow.png")} alt='Alerted enchir icon.' />
             </div>
           </section>
           <div className='footer-button'>

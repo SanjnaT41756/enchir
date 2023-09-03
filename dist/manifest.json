@@ -27,7 +27,14 @@
     },
     "web_accessible_resources": [
       {
-        "resources": ["js/dc256b500c4c6129e3a1.png"],
+        "resources": 
+        [
+          "js/images/enchirNeutral.png", 
+          "js/images/enchir_wow.png", 
+          "js/images/cookie.png", 
+          "js/images/lock.png", 
+          "js/images/enchir_star.png"
+        ],
         "matches": ["<all_urls>"]
       }
     ]

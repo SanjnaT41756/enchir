@@ -2,18 +2,17 @@ import React from 'react';
 import './Guide_3.scss';
 import Header from '../components/Header';
 import Button from '../components/Button';
-import cookie from '../assets/images/cookie.png';
-import lock from '../assets/images/lock.png'
-
+// import cookie from '../assets/images/cookie.png';
+// import lock from '../assets/images/lock.png'
 
 
 function Guide_3(props) {
     let image; 
 
     if (props.type === 'cookie') {
-      image = cookie;
+      image = chrome.runtime.getURL("js/images/cookie.png");
     } else if (props.type === 'lock') { // can add more specific types
-        image = lock;
+      image = chrome.runtime.getURL("js/images/lock.png");
     }
     
 

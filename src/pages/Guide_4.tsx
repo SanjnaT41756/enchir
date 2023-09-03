@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import Stars from '../components/Stars';
-import enchirStar from '../assets/images/enchir_star.png';
+//import enchirStar from '../assets/images/enchir_star.png';
 import './Guide_4.scss';
 
 function Guide_4(props) {
@@ -20,7 +20,7 @@ function Guide_4(props) {
             </div>
           </div>
           <div className='right'>
-            <img className='enchir-icon' src={enchirStar} alt='Enchir starry-eyed icon.' />
+            <img className='enchir-icon' src={chrome.runtime.getURL("js/images/enchir_star.png")} alt='Enchir starry-eyed icon.' />
           </div>
         </section>
         <div className='footer-button'>

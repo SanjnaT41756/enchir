@@ -1,15 +1,9 @@
 
 console.log('i am here')
 
-//import enchirNeutral from "../dist/js/images/enchirNeutral.png"
-//const button = document.createElement('button');
 const button = document.createElement('img');
-//button.textContent = 'Click Me';
 button.style.width = '50px';
 button.style.height = '50px';
-//button.style.borderRadius = '50%';
-//button.style.backgroundColor = 'brown';
-//button.style.color = 'white';
 button.style.border = 'none';
 button.style.position = 'fixed';
 button.style.cursor = 'pointer';
@@ -17,8 +11,6 @@ button.style.top = '50%';
 button.style.right = '0';
 button.style.transform = 'translateY(-50%)';
 button.style.zIndex = '9999';
-//button.src = enchirNeutral;
-
 button.src = chrome.runtime.getURL("js/images/enchirNeutral.png");
 // Append the button to the body
 document.body.appendChild(button);
@@ -29,6 +21,10 @@ import ReactDOM from 'react-dom';
 import Popup from './popup';
 import { HashRouter as Router} from 'react-router-dom';
 
+
+function getCurrentUrl() {
+  return window.location.href;
+}
 
 let isComponentVisible = false;
 let container; // Store the container reference
@@ -51,9 +47,23 @@ button.addEventListener('click', () => {
   console.log('Button clicked'); 
   if (!isComponentVisible) {
     createContainer();
+
+    
+    // read and pass type based on website url
+    const currentUrl = getCurrentUrl();
+    console.log(currentUrl)
+    let type;
+    if (currentUrl.includes('google.com')){
+      type = 'cookie';
+    }
+    else{
+      type = 'sign in';
+    }
+
+
     // Render your React component into the container
     ReactDOM.render(
-        <Router> <Popup /> </Router>, container
+        <Router> <Popup type={type}/> </Router>, container
     );
     isComponentVisible = true;
 

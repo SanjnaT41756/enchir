@@ -24,7 +24,7 @@ function Guide_3(props) {
       <section className='content'>
       <div className = 'info'>
             <div className='text-contain'>
-                <h3>what are {props.header_text} </h3>
+                <h3>{props.header_text} </h3>
                 <div className='desc'>
                     <p className='desc-text'>
                         {props.content}

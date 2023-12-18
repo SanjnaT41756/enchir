@@ -45,13 +45,15 @@ function createContainer() {
 // Add a click event listener to the button
 button.addEventListener('click', () => {
   console.log('Button clicked'); 
+  const originalUrl = window.location.href;
+
   if (!isComponentVisible) {
     createContainer();
 
-    
     // read and pass type based on website url
     const currentUrl = getCurrentUrl();
     console.log(currentUrl)
+
     let type;
     if (currentUrl.includes('google.com')){
       type = 'cookie';
@@ -66,9 +68,16 @@ button.addEventListener('click', () => {
         <Router> <Popup type={type}/> </Router>, container
     );
     isComponentVisible = true;
+    // Save the original as data attribute
+    document.body.setAttribute('data-original-url', originalUrl);
 
   } 
   else {
+    // get original URL
+    const originalUrl = document.body.getAttribute('data-original-url');
+
+    // Use the history API to navigate back to the original URL
+    window.history.pushState({}, '', originalUrl);
     // Unmount the React component and remove the container
     ReactDOM.unmountComponentAtNode(container);
     container.remove();

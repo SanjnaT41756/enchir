@@ -12,7 +12,7 @@ function Guide_1(props) {
           <section className = 'content'>
             <div className='left'>
               <h3>hey! it's enchir</h3>
-              <p className='desc-text'>would you like to learn about cookies?</p>
+              <p className='desc-text'>{props.content}</p>
             </div>
             <div className='right'>
               <img className='enchir-icon' src={chrome.runtime.getURL("js/images/enchir_wow.png")} alt='Alerted enchir icon.' />

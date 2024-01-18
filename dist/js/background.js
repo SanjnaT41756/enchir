@@ -1,1 +1,1 @@
-!function(){"use strict";console.log("background executing"),chrome.action.onClicked.addListener((e=>{e&&e.id&&chrome.scripting.executeScript({target:{tabId:e.id},files:["contentScript.bundle.js"]})}))}();
+(()=>{"use strict";console.log("background executing"),chrome.action.onClicked.addListener((e=>{e&&e.id&&chrome.scripting.executeScript({target:{tabId:e.id},files:["contentScript.bundle.js"]})}))})();

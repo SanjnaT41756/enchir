@@ -15,11 +15,11 @@ function Guide_2(props) {
                         <h2> {props.o1} </h2>
                     </div>
                     <div className="button-and-text">
-                        <CircleButton type='arrow' link='#/T2'  />
+                        <CircleButton type='arrow' link='#/G3'  />
                         <h2> {props.o2}</h2>
                     </div>
                     <div className="button-and-text">
-                        <CircleButton type='arrow' link='#/T3'  />
+                        <CircleButton type='arrow' link='#/G3'  />
                         <h2> {props.o3}</h2>
                     </div>
                 </div>

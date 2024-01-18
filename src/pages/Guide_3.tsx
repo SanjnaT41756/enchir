@@ -11,7 +11,7 @@ function Guide_3(props) {
 
     if (props.type === 'cookie') {
       image = chrome.runtime.getURL("js/images/cookie.png");
-    } else if (props.type === 'lock') { // can add more specific types
+    } else if (props.type === 'lock') { 
       image = chrome.runtime.getURL("js/images/lock.png");
     }
     

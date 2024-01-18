@@ -55,11 +55,11 @@ button.addEventListener('click', () => {
     console.log(currentUrl)
 
     let type;
-    if (currentUrl.includes('google.com')){
-      type = 'cookie';
+    if (currentUrl.includes('login') || currentUrl.includes('signin') ||currentUrl.includes('sign-in') ||currentUrl.includes('log-in')){
+      type = 'sign in';
     }
     else{
-      type = 'sign in';
+      type = 'cookie';
     }
 
 

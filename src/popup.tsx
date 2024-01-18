@@ -32,6 +32,7 @@ function Popup(props) {
     prop_type = 'lock'
 
   }
+  
   if (type) {
     return (
       <ChakraProvider>

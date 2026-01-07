@@ -6,7 +6,7 @@ module.exports = {
     entry: {
         index: "./src/index.tsx",
         background: './src/background.ts',
-        content: './src/content.tsx'
+        content: './src/content.ts'
     },
     mode: "production",
     module: {
@@ -53,6 +53,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: "manifest.json", to: "../manifest.json" },
+                { from: "src/content.css", to: "../content.css" },
             ],
         }),
         ...getHtmlPlugins(["index"]),

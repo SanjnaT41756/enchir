@@ -1,8 +1,8 @@
 {
     "version": "1.0.0",
     "manifest_version": 3,
-    "name": "enchir chrome extension",
-    "description": "This is a Chrome extension built with React and TypeScript",
+    "name": "enchir",
+    "description": "enchir helps you with navigating web browsers",
     "permissions": ["activeTab"],
     "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self';"

@@ -28,7 +28,7 @@ $small-font-size: 0.875rem;
 
 /* Font Weights */
 $font-weight-regular: 400;
-$font-weight-medium: 500;
+$font-weight-medium: 600;
 
 /* Font Style */
 $font-style-regular: normal;
@@ -75,7 +75,7 @@ h3{
 p {
   font-weight: $font-weight-regular;
   font-size:$small-font-size;
-  line-height: $line-height-large;
+  line-height: $line-height-med;
   
   &.header {
     color: $primary-dark-brown-80;

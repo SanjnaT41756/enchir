@@ -12,22 +12,15 @@ function Tutorial_1() {
     <div className='page-contain tut-1'> 
       <Header className='header' page='welcome to enchir' />
       <section className='content'>
-        <h2>hey there!</h2>
-        <img className='enchir-icon' src={enchirNeutral} alt='enchir neutral icon' />
-        <div className='desc'>
-            <h2> i'm enchir, </h2>
+        <div className='text-content'>
+          <div className='desc'>
             <p className='desc-text'>your personal web exploring buddy</p>
+          </div>
+        </div>
+        <div className='image-container'>
+          <img className='enchir-icon' src={enchirNeutral} alt='enchir neutral icon' />
         </div>
       </section>
-      <Button className='bot-button' type='default' link='#/T2' text='learn more' />
-      {/* <Button type='yes' link='/home' text='insert text' />
-      <CircleButton type="cross" link='/home' />
-      <CircleButton type="info" link='/home' />
-      <CircleButton type="arrow" link='/home' />
-      <Stars/>
-      <Header page="insert text" />
-      <LinkBar /> */}
-
     </div>
   )
 }

@@ -6,7 +6,8 @@ module.exports = {
     entry: {
         index: "./src/index.tsx",
         background: './src/background.ts',
-        content: './src/content.ts'
+        content: './src/content.ts',
+        httpDetector: './src/content/httpDetector.ts'
     },
     mode: "production",
     module: {

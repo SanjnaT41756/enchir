@@ -1,0 +1,1 @@
+!function(){"use strict";!function(){const t="http:"===window.location.protocol;t?(chrome.storage.local.set({isHttpSite:!0}),chrome.runtime.sendMessage({type:"HTTP_SITE_DETECTED",url:window.location.href})):chrome.storage.local.set({isHttpSite:!1}),chrome.runtime.onMessage.addListener(((e,o,i)=>("CHECK_HTTP_STATUS"===e.type&&i({isHttp:t,url:window.location.href}),!0)))}()}();

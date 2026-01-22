@@ -3,7 +3,12 @@
     "manifest_version": 3,
     "name": "enchir",
     "description": "enchir helps you with navigating web browsers",
-    "permissions": ["activeTab"],
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabs",
+      "scripting"
+    ],
     "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self';"
     },
@@ -22,17 +27,26 @@
         "js": ["js/content.js"],
         "css": ["content.css"],
         "run_at": "document_end"
+      },
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/httpDetector.js"],
+        "run_at": "document_start"
       }
     ],
+    "host_permissions": [
+      "<all_urls>"
+    ],   
     "background": {
-      "service_worker": "js/background.js"
+      "service_worker": "js/background.js",
+      "type": "module"
     },
     "web_accessible_resources": [
       {
         "resources": 
         [
           "js/images/enchirNeutral.png", 
-          "js/images/enchir_wow.png", 
+          "js/images/enchirSad.png", 
           "js/images/cookie.png", 
           "js/images/lock.png", 
           "js/images/enchir_star.png"

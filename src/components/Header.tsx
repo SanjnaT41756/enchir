@@ -1,17 +1,24 @@
 import CircleButton from "./CircleButton";
 import "./Header.scss";
 
-function Header(props) {
-  const pageName = props.page;
+interface HeaderProps {
+  page: string;
+}
+
+function Header({ page }: HeaderProps) {
+  const handleClose = () => {
+    // Close the extension popup
+    window.close();
+  };
 
   return(
     <div className='header-contain'>
       <div className='left'>
         <h3>hey! it's enchir</h3>
-        <p>{props.page}</p>
+        <p>{page}</p>
       </div>
       <div className='right'>
-        <CircleButton link='#/G4' type='cross'/>
+        <CircleButton type='cross' onClick={handleClose} />
       </div>
     </div>
   );

@@ -5,24 +5,33 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import React from 'react';
 
-/* takes in link and type */
-function CircleButton (props) { 
+interface CircleButtonProps {
+  type: 'cross' | 'info' | 'arrow';
+  link?: string;
+  onClick?: () => void;
+}
+
+function CircleButton({ type, link, onClick }: CircleButtonProps) { 
+  const handleClick = (e: React.MouseEvent) => {
+    if (onClick) {
+      e.preventDefault();
+      onClick();
+    }
+    // If no onClick handler is provided but we have a link, the default <a> behavior will work
+  };
+
   return(
-    <a href={props.link}>
-      <div className={`circle-button-contain ${props.type}`}>
-        {props.type === 'cross' && (
+    <a href={link} onClick={handleClick}>
+      <div className={`circle-button-contain ${type}`}>
+        {type === 'cross' && (
           <CloseIcon boxSize={3} />
         )}
-        {props.type === 'info' && (
+        {type === 'info' && (
           <MoreHorizIcon fontSize={'medium'} />
         )}
-        {props.type == 'arrow' && (
-          <>
-            <ChevronRightIcon boxSize={25} />
-          </>
-
+        {type === 'arrow' && (
+          <ChevronRightIcon boxSize={25} />
         )}
-
       </div>
     </a>
   );

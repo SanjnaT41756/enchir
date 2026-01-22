@@ -10,7 +10,7 @@ import './Tutorial_1.scss';
 function Tutorial_1() {
   return(
     <div className='page-contain tut-1'> 
-      <Header className='header' page='welcome to enchir' />
+      <Header page='welcome to enchir' />
       <section className='content'>
         <div className='text-content'>
           <div className='desc'>

@@ -1,5 +1,43 @@
+/* Pulsing animation for HTTP warning */
+@keyframes pulse-red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
 /* Content script styles */
 .enchir-extension {
     /* Add your styles here */
     display: none; /* Hidden by default */
+}
+
+/* HTTP warning state */
+#enchir-extension-button.http-warning {
+  animation: pulse-red 1.5s infinite;
+  border: 2px solid #ff4d4d;
+  position: relative;
+  overflow: hidden;
+}
+
+#enchir-extension-button.http-warning::after {
+  content: '!';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff4d4d;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
 }

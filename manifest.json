@@ -7,14 +7,20 @@
       "activeTab",
       "storage",
       "tabs",
-      "scripting"
+      "scripting",
+      "action"
     ],
     "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self';"
     },
     "action": {
         "default_popup": "js/index.html",
-        "default_title": "React Chrome Extension"
+        "default_title": "Enchir",
+        "default_icon": {
+          "16": "enchirIcon16.png",
+          "48": "enchirIcon48.png",
+          "128": "enchirIcon128.png"
+        }
     },
     "icons":{
         "16": "enchirIcon16.png",
